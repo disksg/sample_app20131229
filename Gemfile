@@ -10,8 +10,8 @@ group :development, :test do
   gem 'sqlite3', '1.3.8'
   gem 'rspec-rails', '2.13.1'
   gem 'guard', '2.2.5'
- gem 'guard-rspec', '2.5.0'
- # gem 'guard-rspec', '4.2.0'
+  gem 'guard-rspec', '2.5.0'
+  # gem 'guard-rspec', '4.2.0'
   gem 'spork-rails', '4.0.0'
   gem 'guard-spork', '1.5.0'
   gem 'childprocess', '0.3.6'
@@ -25,9 +25,10 @@ group :test do
   # Uncomment this line on OS X.
   # gem 'growl', '1.0.3'
 
- # Uncomment this line on OS X maevericks.
- # gem "terminal-notifier-guard" '1.5.1', git: "git://github.com/Springest/terminal-notifier-guard.git"
- gem 'terminal-notifier-guard'
+  # Uncomment this line on OS X maevericks.
+  # gem "terminal-notifier-guard" '1.5.1', git: "git://github.com/Springest/terminal-notifier-guard.git"
+  gem 'terminal-notifier-guard'
+  # gem 'factory_girl_rails', '4.2.1'
 
   # Uncomment these lines on Linux.
   # gem 'libnotify', '0.8.0'
