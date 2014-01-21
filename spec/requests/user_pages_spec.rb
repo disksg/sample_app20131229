@@ -44,15 +44,15 @@ describe "User pages" do
         it { should have_link('Sign out') }
         it { should have_title(user.name) }
         it { should have_selector('div.alert.alert-success', text: 'Welcome') }
+
+        describe "followed by signout" do
+          before { click_link "Sign out" }
+          it { should have_link('Sign in') }
+        end
       end
 
       it "should create a user" do
           expect { click_button submit }.to change(User, :count).by(1)
-      end
-
-      describe "followed by signout" do
-        before { click_link "Sign out" }
-        it { should have_link('Sign in') }
       end
     end
   end

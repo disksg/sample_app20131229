@@ -16,7 +16,6 @@ describe User do
   it { should respond_to(:password_confirmation) }
   it { should respond_to(:authenticate) }
 
-
   it { should be_valid }
 
   describe "when password is not present" do
@@ -90,8 +89,8 @@ describe User do
     its(:remember_token) { should_not be_blank }
   end
 
-  it { should respond_to(:password_confirmation) }
-  it { should respond_to(:remember_token) }
-  it { should respond_to(:authenticate) }
-
+  private
+    def create_remember_token
+      # トークンを作成する。
+    end
 end
